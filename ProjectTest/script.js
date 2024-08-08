@@ -15,13 +15,13 @@ function checkPassoword() {
 
   if (width >= 0 && width < 25) {
   } else if (width >= 25 && width < 50) {
-    feedback = "you are almost there";
+    feedback = "still too easy";
     color = "n50";
   } else if (width >= 50 && width < 75) {
     feedback = "fair enough";
     color = "n75";
   } else {
-    feedback = "this is soooo strong";
+    feedback = "Good work boss";
     color = "n100";
   }
 
@@ -34,4 +34,7 @@ function checkPassoword() {
   document
     .getElementById("password-progress")
     .setAttribute("class", `progress-bar-fill ${color}`);
+
+  const seeinputBar = (document.getElementById("pswbar").className =
+    "password-bar");
 }

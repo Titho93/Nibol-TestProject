@@ -20,6 +20,9 @@
         <div class="wrapper">
             <div class="form-box login">
                 <h2>Signup</h2>
+                <div class="login-signup">
+                    <p>Already registered? <a href="index.html">Login</a></p>
+                </div>
                 <form action="#">
                     <div class="input-box">
                         <input type="text" placeholder="Name" required>
@@ -33,10 +36,12 @@
                     <div class="input-box">
                         <input id="password-input" type="password" placeholder="Password" required maxlength="20" />
                     </div>
-                    <div class="progress-bar">
-                        <span id="password-progress" class="progress-bar-fill n25" style="width: 0%;"></span>
+                    <div id="pswbar" class="password-bar-non">
+                        <div class="progress-bar">
+                            <span id="password-progress" class="progress-bar-fill n25" style="width: 0%;"></span>
+                        </div>
+                        <div id="progress-label"></div>
                     </div>
-                    <div id="progress-label"></div>
                     <input id="terms-and-conditions" type="checkbox" required />
                     <label for="terms-and-conditions">Agree to our Terms and Conditions</label>
                     <button type="submit" class="btn">Create account</button>
