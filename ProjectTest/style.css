@@ -16,7 +16,6 @@
 .wrapper {
     position: relative;
     width: 480px;
-    height: 480px;
     background-color: #FFFFFF;
     border: 1px solid #D6D6D6;
     border-radius: 12px;
@@ -25,9 +24,17 @@
     align-items: center;
 }
 
+.wrapper.l {
+    height: 480px;
+}
+
+.wrapper.s {
+    height: 636px;
+}
+
 .wrapper .form-box {
     width: 100%;
-    margin-top: 32px;
+    margin-top: 42px;
     padding: 40px;
     line-height: 40.32px;
 }
@@ -151,4 +158,64 @@
 
 .progress-bar-fill.n100 {
     background-color: green;
+}
+
+/* checkbox */
+
+/* checkbox none */
+
+.custom-checkbox {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+/* checkbox style */
+.custom-checkbox .checkmark {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D6D6D6;
+    border-radius: 6px;
+    position: relative;
+    margin-right: 15px;
+}
+
+/* checkbox style when selected */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #FF3D00;
+}
+
+/* symbol check  */
+.custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    display: block;
+}
+
+.custom-checkbox p {
+    font-weight: 400;
+}
+
+.custom-checkbox p a {
+    color: #000000;
 }

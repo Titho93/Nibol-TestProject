@@ -1,9 +1,9 @@
 function pageReady() {
   const inputPwd = document.getElementById("password-input");
-  inputPwd.addEventListener("keydown", checkPassoword);
+  inputPwd.addEventListener("keydown", checkPassword);
 }
 
-function checkPassoword() {
+function checkPassword() {
   // take password input text
   const inputPwdLen = document.getElementById("password-input").value.length;
   // calculate percentage respect to max number of password chars

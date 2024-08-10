@@ -17,7 +17,7 @@
 
 <body onload="pageReady()">
     <div class="container">
-        <div class="wrapper">
+        <div class="wrapper s">
             <div class="form-box login">
                 <h2>Signup</h2>
                 <div class="login-signup">
@@ -42,8 +42,11 @@
                         </div>
                         <div id="progress-label"></div>
                     </div>
-                    <input id="terms-and-conditions" type="checkbox" required />
-                    <label for="terms-and-conditions">Agree to our Terms and Conditions</label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        <p>Agree to our <a href="#">Terms and Conditions</a></p>
+                    </label>
                     <button type="submit" class="btn">Create account</button>
                 </form>
             </div>
