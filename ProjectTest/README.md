@@ -2,6 +2,6 @@
 
 ---
 
-This is a project test for Nibol
+This is a project test for a company
 The technologies used are: HTML, CSS, JavaScript.
 The project is related to a login page with a registration option for users who are not yet registered.
